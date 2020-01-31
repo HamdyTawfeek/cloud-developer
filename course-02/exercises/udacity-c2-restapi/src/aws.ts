@@ -5,7 +5,7 @@ const c = config.dev;
 
 //Configure AWS
 if(c.aws_profile !== "DEPLOYED") {
-  var credentials = new AWS.SharedIniFileCredentials({profile: 'default'});
+  var credentials = new AWS.SharedIniFileCredentials({profile: 'udacity_hamdy'});
   AWS.config.credentials = credentials;
 }
 
